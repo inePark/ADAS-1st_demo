@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/default_bg2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/driver_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="21dp"
+            android:src="@drawable/driver_status_txt" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/driver_txt"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/driver_txt"
+            android:src="@drawable/keti" />
+
+        <ImageView
+            android:id="@+id/normal"
+            android:layout_width="280dp"
+            android:layout_height="320dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/driver_txt"
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="27dp"
+            android:layout_weight="0.05"
+            android:src="@drawable/basic_mode_blue_circle" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="66dp"
+            android:layout_toStartOf="@+id/textView4"
+            android:scaleType="fitXY"
+            android:src="@drawable/heart_btn" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/imageView6"
+            android:layout_marginEnd="196dp"
+            android:text="Heart rate : "
+            android:textColor="@color/colorWhite"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/bpm_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_toStartOf="@+id/bpm_fix"
+            android:text="0 "
+            android:textColor="@color/colorWhite"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/bpm_fix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bpm_textView"
+            android:layout_alignBottom="@+id/bpm_textView"
+            android:layout_marginStart="24dp"
+            android:layout_toEndOf="@+id/driving_time_textView"
+            android:text="BPM"
+            android:textColor="@color/colorWhite"
+            android:textSize="40dp" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignStart="@+id/imageView6"
+            android:layout_below="@+id/bpm_textView"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/driving_time" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView7"
+            android:layout_alignEnd="@+id/textView4"
+            android:text="Driving Time : "
+            android:textColor="@color/colorWhite"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/driving_time_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView5"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_marginStart="25dp"
+            android:layout_toEndOf="@+id/textView5"
+            android:text="0 "
+            android:textColor="@color/colorWhite"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/time_fix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/driving_time_textView"
+            android:layout_alignBottom="@+id/driving_time_textView"
+            android:layout_alignStart="@+id/bpm_fix"
+            android:text="Hours"
+            android:textColor="@color/colorWhite"
+            android:textSize="40dp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_device_address"
+            android:textSize="18sp" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/device_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_state"
+            android:textSize="18sp" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/connection_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/disconnected"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/ManboUpdateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="uMS"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/PPGUpdateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="uPS"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/SleepUpdateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="uSS"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/PPGBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="uPPG"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/BaroBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="uBARO"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Setting_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/ExerciseStartBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="eSTART"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/ExerciseStopBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="eSTOP"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/ExerciseSyncBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="eSYNC"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/ExerciseUpdateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="eUPDATE"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Setting_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/ConnectionBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sCON"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/RTCBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sRTC"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/UserProfileBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sPRO"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/LanguageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sLAN"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/UnitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sUNIT"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Setting_04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/VersionBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sVER"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/UserPPGBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sUPPG"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/SleepTimeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sSTIME"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/PPGIntervalBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sPITV"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/ExerciseDisplayBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sEDI"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Setting_05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/CallBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CALL"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/CallAcceptBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACALL"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/SMSBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMS"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/GoalBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GOAL"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/AppNotiBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="APP"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_data"
+            android:textSize="18sp" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:id="@+id/sd_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/send_data_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:focusableInTouchMode="true"
+                android:textSize="15dp" />
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

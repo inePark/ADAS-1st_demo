@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.android.bluetoothlegatt"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:configChanges="orientation|keyboardHidden"
+        android:icon="@drawable/keti"
+        android:label="keti_AVN_1"
+        android:theme="@android:style/Theme.Holo.NoActionBar">
+
+        <activity
+            android:name=".com.DeviceScanActivity"
+            android:label="KETI AVN_1"
+            android:configChanges="orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".com.DeviceControlActivity"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="landscape"/>
+
+        <service
+            android:name=".com.BluetoothLeService"
+            android:enabled="true" />
+
+        <uses-permission android:name="android.permission.INTERNET"
+            tools:ignore="WrongManifestParent" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"
+            tools:ignore="WrongManifestParent" />
+
+        <uses-sdk android:minSdkVersion="3"
+            tools:ignore="WrongManifestParent" />
+
+        <activity
+            android:name=".com.map.map_main_activity"
+            android:launchMode="singleInstance"
+            android:clearTaskOnLaunch="true"
+            android:screenOrientation="landscape"
+            ></activity>
+
+        <activity
+            android:name=".com.can_main_activity"
+            android:launchMode="singleInstance"
+            android:clearTaskOnLaunch="true"
+            android:screenOrientation="landscape"
+            ></activity>
+
+        <activity
+            android:name=".com.music.music_main_activity"
+            android:launchMode="singleInstance"
+            android:clearTaskOnLaunch="true"
+            android:screenOrientation="landscape"
+            ></activity>
+
+        <activity
+            android:name=".com.music.carousel_activity"
+            android:launchMode="singleInstance"
+            android:clearTaskOnLaunch="true"
+            android:screenOrientation="landscape"
+            ></activity>
+
+        <activity
+            android:name=".com.music.music_play_activity"
+            android:launchMode="singleInstance"
+            android:clearTaskOnLaunch="true"
+            android:screenOrientation="landscape"
+            ></activity>
+
+        <activity
+            android:name=".com.music.music_play1_activity"
+            android:launchMode="singleInstance"
+            android:clearTaskOnLaunch="true"
+            android:screenOrientation="landscape"
+            ></activity>
+
+        <activity
+            android:name=".com.music.music_play2_activity"
+            android:launchMode="singleInstance"
+            android:clearTaskOnLaunch="true"
+            android:screenOrientation="landscape"
+            ></activity>
+
+        <activity
+            android:name=".com.music.music_play3_activity"
+            android:launchMode="singleInstance"
+            android:clearTaskOnLaunch="true"
+            android:screenOrientation="landscape"
+            ></activity>
+
+        <activity
+            android:name=".com.smart_key.smartKey_activity"
+            android:launchMode="singleInstance"
+            android:clearTaskOnLaunch="true"
+            android:screenOrientation="landscape"
+            ></activity>
+
+        <activity
+            android:name=".com.bio_status.bio_activity"
+            android:launchMode="singleInstance"
+            android:clearTaskOnLaunch="true"
+            android:screenOrientation="landscape"
+            ></activity>
+
+    </application>
+
+</manifest>
